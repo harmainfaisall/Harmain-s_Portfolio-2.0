@@ -9,7 +9,7 @@
 
 export interface Skill {
   name: string;        // e.g. "React"
-  category: string;    // e.g. "Frontend", "Backend", "DevOps", "Database", "Tools"
+  category: string;    // e.g. "Frontend", "Backend", "Full-Stack", "Database", "State Management"
   description: string; // Short 1-line description
   icon?: string;       // Optional icon URL or image path
   level?: string;      // e.g. "Expert", "Advanced", "Intermediate"
@@ -84,37 +84,51 @@ export const secondColumn: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     level: "Intermediate",
   },
+  {
+    name: "Redis",
+    category: "Caching & Queues",
+    description: "In-memory caching, distributed rate limiting, and pub/sub messaging.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    level: "Intermediate",
+  },
 ];
 
-// Column 3 (DevOps, Cloud & Architecture) — Duration: 17s
+// Column 3 (Full-Stack State, APIs & Tooling) — Duration: 17s
 export const thirdColumn: Skill[] = [
   {
-    name: "Docker",
-    category: "DevOps",
-    description: "Multi-stage containerization, Docker Compose, and image optimization.",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    name: "Redux Toolkit",
+    category: "State Management",
+    description: "Global state architecture, predictable store workflows, and reactive client caching.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     level: "Advanced",
   },
   {
-    name: "Kubernetes",
-    category: "Cloud",
-    description: "Container orchestration, ingress controllers, cluster scaling, and pods.",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    name: "Prisma ORM",
+    category: "Database ORM",
+    description: "Type-safe database modeling, schema migrations, and relational query building.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "GraphQL",
+    category: "API Architecture",
+    description: "Declarative data queries, Apollo client integration, schemas, and type-safe mutations.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     level: "Intermediate",
   },
   {
-    name: "Git & GitHub",
-    category: "Tools",
-    description: "Version control, feature branching workflows, PR reviews, and CI/CD.",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    name: "RESTful APIs",
+    category: "API Engineering",
+    description: "Scalable endpoint design, JSON serialization, HTTP protocols, and authentication.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
     level: "Expert",
   },
   {
-    name: "Linux & Shell",
-    category: "Infrastructure",
-    description: "Bash scripting, server configuration, permissions, and systemd services.",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-    level: "Advanced",
+    name: "Git & GitHub",
+    category: "Version Control",
+    description: "Source code management, collaborative feature branching, and pull request workflows.",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    level: "Expert",
   },
 ];
 

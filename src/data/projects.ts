@@ -3,26 +3,13 @@
  * PORTFOLIO PROJECTS DATA
  * ============================================================================
  * 
- * You can easily add, edit, or remove projects here without touching the UI component!
- * 
- * To add a new project, copy the template below and paste it into the PROJECTS array:
- * 
- * {
- *   id: "07",
- *   title: "Your Project Title",
- *   category: "Full-Stack", // e.g. "Full-Stack", "DevOps", "Frontend", "Cloud", "Mobile"
- *   description: "A short, engaging description of what you built and the problem it solved.",
- *   image: "https://images.unsplash.com/photo-...", // Unsplash URL or /local-image.jpg
- *   liveUrl: "https://your-demo-url.com", // Optional
- *   githubUrl: "https://github.com/your-username/repo", // Optional
- *   technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
- * }
+ * Featured projects built by Harmain Faisal.
  */
 
 export interface Project {
   id: string;
   title: string;
-  category: string; // e.g. "Full-Stack", "DevOps", "Frontend", "Cloud Architecture"
+  category: string;
   description: string;
   image: string;
   liveUrl?: string;
@@ -33,86 +20,79 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: "01",
-    title: "COFFIORA",
+    title: "Coffiora",
     category: "Full-Stack Development",
     description:
-      "A modern coffee website crafted with a warm, immersive design and smooth interactions, blending rich visuals with a premium café experience.",
-    image:
-      "./Portfolio/src/assets/coffiora.jpg",
+      "Premium artisanal coffee website featuring dark luxury visuals, interactive coffee blend explorer, order customization, and immersive storytelling.",
+    image: "/assets/coffiora.png",
     liveUrl: "https://coffiora.netlify.app/",
-    githubUrl: "https://github.com/harmainfaisall/COFFIORA",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/harmainfaisall/Coffiora",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Animations"],
   },
   {
     id: "02",
-    title: "Delicious Bites",
-    category: "Full-Stack Development",
+    title: "ServiConnect",
+    category: "Full-Stack Web App",
     description:
-      "A premium food website with a rich dark aesthetic, interactive menu, add-to-cart experience, and a smooth modern UI.",
-    image:
-      "./Portfolio/src/assets/delicious-bites.png",
-    liveUrl: "https://delicious-bites.netlify.app/",
-    githubUrl: "https://github.com/harmainfaisall/Delicious-Bites",
-    technologies: ["JavaScript", "TypeScript", "Tailwind CSS"],
+      "A service booking web app built for a hackathon, designed to connect users with local service providers through a simple booking experience.",
+    image: "/assets/serviconnect.png",
+    liveUrl: "https://serviconnect-hackathonproject.netlify.app/",
+    githubUrl: "https://github.com/harmainfaisall/Hackathon-ServiConnect",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
   },
   {
     id: "03",
-    title: "ServiConnect",
-    category: "FullStack Development",
+    title: "Delicious Bites",
+    category: "Food Ordering Web App",
     description:
-      "Enterprise authentication microservice providing OAuth2 social logins, JWT rotation, encrypted session storage, and distributed Redis rate-limiting.",
-    image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com/pulseauth",
-    githubUrl: "https://github.com/harmainfaisall/pulseauth",
-    technologies: ["React.js", "TypeScript", "Vite", "Tailwind Css"],
+      "Responsive food ordering website featuring category filtering, shopping cart, real-time price calculation, login/signup flow, and an interactive checkout experience.",
+    image: "/assets/delicious-bites.png",
+    liveUrl: "https://delicious-bites-practiceweb.netlify.app/",
+    githubUrl: "https://github.com/harmainfaisall/Delicious-Bites",
+    technologies: ["JavaScript", "HTML5", "CSS3", "Shopping Cart"],
   },
   {
     id: "04",
-    title: "WordFlow AI",
-    category: "FullStack",
+    title: "Figma Clone",
+    category: "UI Clone / Frontend",
     description:
-      "High-throughput telemetry and real-time database query visualizer handling streaming time-series data with sub-second WebSocket updates.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com/datasphere",
-    githubUrl: "https://github.com/harmainfaisall/datasphere",
-    technologies: ["HTML5", "CSS3", "JavaScript", "UIUX"],
+      "Pixel-perfect recreation of the official Figma design canvas and toolbars built strictly with pure HTML, modern CSS Grid, and custom property design tokens.",
+    image: "/assets/figma-clone.png",
+    liveUrl: "https://calm-dolphin-122a18.netlify.app/",
+    githubUrl: "https://github.com/harmainfaisall/My-First-HACKATHON",
+    technologies: ["HTML5", "CSS Grid", "Pixel Perfect", "Design Tokens"],
   },
   {
     id: "05",
     title: "TravelBae",
-    category: "Headless E-Commerce",
+    category: "Travel & Booking",
     description:
-      "Modern headless commerce engine featuring instant search, dynamic cart state management, Stripe payment processing, and inventory sync.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com/omnicommerce",
-    githubUrl: "https://github.com/harmainfaisall/omnicommerce",
-    technologies: ["Next.js 14", "Stripe", "Tailwind CSS", "Zustand", "MySQL"],
+      "Modern destination discovery and travel booking web platform created using Bootstrap components, modal search, carousel sliders, and destination filters.",
+    image: "/assets/Travelbae.jpg",
+    liveUrl: "https://travelbaeweb.netlify.app",
+    githubUrl: "https://github.com/harmainfaisall/Bootstrap-practice",
+    technologies: ["Bootstrap 5", "JavaScript", "HTML5", "CSS3"],
   },
   {
     id: "06",
-    title: "Clause",
-    category: "Cloud Telemetry",
+    title: "WordFlow AI",
+    category: "AI Landing Page",
     description:
-      "Distributed cluster health monitor streaming CPU, memory thresholds, container uptime, and real-time incident alerting across servers.",
-    image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com/inframonitor",
-    githubUrl: "https://github.com/harmainfaisall/inframonitor",
-    technologies: ["Go", "Docker", "Prometheus", "Grafana", "Linux"],
+      "Modern AI landing page featuring glassmorphism UI, responsive sections, pricing cards, and engaging call-to-action design.",
+    image: "/assets/wordflowai.png",
+    liveUrl: "https://landingpagewordflowai.netlify.app/",
+    githubUrl: "https://github.com/harmainfaisall/Syntecxhub_Project1_landingpage",
+    technologies: ["AI Landing Page", "Modern UI", "Glassmorphism", "Responsive"],
   },
-   {
+  {
     id: "07",
     title: "Image Gallery",
-    category: "Cloud Telemetry",
+    category: "Media & Web App",
     description:
-      "Distributed cluster health monitor streaming CPU, memory thresholds, container uptime, and real-time incident alerting across servers.",
-    image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-    liveUrl: "https://example.com/inframonitor",
-    githubUrl: "https://github.com/harmainfaisall/inframonitor",
-    technologies: ["Go", "Docker", "Prometheus", "Grafana", "Linux"],
+      "Responsive image gallery with smooth category filters, interactive lightbox full-screen modal zoom, and optimized lazy-loading assets.",
+    image: "/assets/image-gallery.png",
+    liveUrl: "https://codealphaprojectimagegallery.netlify.app/",
+    githubUrl: "https://github.com/harmainfaisall/Codealpha-project1-imagegallery",
+    technologies: ["JavaScript", "CSS Grid", "Lightbox", "Responsive"],
   },
 ];
